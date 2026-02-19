@@ -4,8 +4,8 @@
 
 ## Run from terminal:
 
-docker build -t testdockerndiaye.azurecr.io/studentperformance:latest .
+docker build -t testdockerniang.azurecr.io/studentperformance:latest .
 
-docker login testdockerndiaye.azurecr.io
+docker login testdockerniang.azurecr.io
 
-docker push testdockerndiaye.azurecr.io/studentperformance:latest
+docker push testdockerniang.azurecr.io/studentperformance:latest

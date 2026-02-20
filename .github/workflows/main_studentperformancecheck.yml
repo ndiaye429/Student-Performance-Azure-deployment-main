@@ -31,9 +31,9 @@ jobs:
     - name: Build and push image
       run: |
 
-        docker build -t testdockerniang.azurecr.io/studentperformance:${{ github.sha }} .
+        docker build -t testdockerniang.azurecr.io/studentperformance:latest .
 
-        docker push testdockerniang.azurecr.io/studentperformance:${{ github.sha }}
+        docker push testdockerniang.azurecr.io/studentperformance:latest
 
 
 
@@ -55,4 +55,4 @@ jobs:
 
         publish-profile: ${{ secrets.AzureAppService_PublishProfile }}
 
-        images: testdockerniang.azurecr.io/studentperformance:${{ github.sha }}
+        images: testdockerniang.azurecr.io/studentperformance:latest
